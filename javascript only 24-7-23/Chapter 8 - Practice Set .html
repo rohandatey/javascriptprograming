@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 8 - Practice Set</title>
+</head>
+
+<!-- <body>
+    <button onclick="alert('please give a plate of maggie')">meggie</button>
+    <button onclick="alert('please give a plate of vada pow')">vada pow</button>
+    <button onclick="alert('please give a plate of vada wow')">vada wow</button>
+
+    <h1>bookmarks</h1>
+    <a href="https://google.com"><button id="google">Google</button></a>
+    <a href="https://fb.com"><button id="Facebook">Facebook</button></a>
+    <a href="https://twitter.com"><button id="twitter">Twitter</button></a>
+
+</body>
+<script>
+    document.getElementById("google").addEventListener("click", function () {
+        let url = "https://google.com";
+
+        window.Location = "https://google.com";
+        win.focus();
+
+    })
+</script> -->
+
+<!-- Question make a glowing blub -->
+<body>
+    
+    <div id="bulb" class="bulbcontainer bulb">hello there</div> 
+    <style>
+body{
+    height: 100%;
+    width: 100%;
+}
+.bulb{
+   
+    background-color: yellow;
+    /* background-color: red;
+    background-color: blue;
+    background-color: green; */
+
+}
+
+.bulbcontainer{
+    height: 341px;
+    width: 341px;
+}
+</style>
+</body>
+
+<script>
+    setInterval( async function(){
+        document.querySelector("#bulb").classList.toggle("bulb")
+    },500)
+</script>
+</html>

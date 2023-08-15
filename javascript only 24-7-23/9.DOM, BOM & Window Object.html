@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Maniuplation</title>
+</head>
+
+<body>
+<ul id="element">
+    <li class="list-item">first element</li>
+    <li class="list-item">second element</li>
+    <li class="list-item">thired element</li>
+</ul>
+
+<!-- <div class="alldivs">first div</div>
+<script>
+const alldivs=document.getElementsByClassName("alldivs")
+console.log(alldivs)
+</script>
+<div  class="alldivs">second div</div>
+
+
+<table>
+    <tr>
+        <td>one</td>
+        <td>two</td>
+    </tr>
+    <tr>three</tr>
+    <tr>four</tr>
+</table> -->
+
+<button id="clickBtn" onclick="alert('hello world')">click me</button>
+
+
+
+</body>
+
+<script>
+//Root-nodes
+
+// console.log(document.documentElement)
+// console.log(document.body)
+// console.log(document.head)
+
+// childrens
+
+// console.log(document.body.childNodes)
+console.log(document.body.children)
+// console.log(document.body.firstChild)
+// console.log(document.body.lastChild)
+// console.log(document.body.firstElementChild)
+// console.log(document.body.lastElementChild)
+
+//ID search
+element.style.backhround = "red"
+
+const ultag =document.getElementById("element")
+ultag.style.backgroundColor = "red"
+console.log()
+
+//list-item
+// listitem =document.getElementsByClassName("listitem")
+// console.log(document.getElementsByTagName("table"))
+
+// Query-selector
+// const listitem =document.querySelector('.list-item')
+// const listitem =document.querySelectorAll('ul > li:last-child')
+// console.log(listitem[0].textContents)
+
+// console.log(listitem)
+
+
+// console.log(alldivs)
+
+// Events
+
+// function callme()
+// {
+// alert("thanks for showing")
+// }
+// clickBtn.onclick = callme
+
+// Add Events listener
+
+ function callme()
+ {
+ alert("thanks for showing")
+ }
+ clickme.addEventListener('click',callme)
+
+
+
+</script>
+
+</html>

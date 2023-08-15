@@ -1,0 +1,55 @@
+<!-- Q1 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <li>home</li>
+        <li>about</li>
+        <li>blog</li>
+        <li>contact</li>
+    </nav>
+    <table>
+        <td>hello1</td>
+        <td>hello2</td>
+        <td>hello3</td>
+        <td>hello4</td>
+
+    </table>
+</body>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+body{
+    height: 100%;
+    width: 100%;
+    
+}
+nav{
+display: flex;
+background:cyan;
+}
+nav li{
+    list-style: none;
+    /* padding: 0,23px; */
+    margin: 10px 30px;
+}
+</style>
+
+<script>
+document.getElementsByTagName("nav")[0].firstElementChild.style.color = "red"
+document.getElementsByTagName("nav")[0].firstElementChild.style.color = "green"
+document.getElementsByTagName("nav")[0].lastElementChild.style.color = "green"
+
+Array.from(document.getElementsByTagName("li")).forEach(element => {
+    element.style.background = "red";
+});
+
+</script>
+</html>

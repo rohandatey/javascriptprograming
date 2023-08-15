@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+
+<script>
+    //<!-- Q1 -->
+
+    const candrive = (age) => {
+        return age >= 18 ? true : false
+    }
+    let runagain = true;
+    // for continus geting alert i use while loop
+
+    while (runagain) {
+        let age = prompt("enter u r age")
+        age = Number.parseInt(age)
+        
+        if(age<0)
+        {
+            console.error("plese enter a valid age");
+            // break;
+        }
+        
+        if (candrive(age)) 
+        {
+            alert("yes you can drive")
+        }
+        else 
+        {
+            alert("no you can not drive")
+        }
+        runagain = confirm("do u want to play again")
+    }
+
+
+
+</script>
+
+</html>
